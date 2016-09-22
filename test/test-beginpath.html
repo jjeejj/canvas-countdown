@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id=myCanvas width=500px height=500px></canvas>  
+  
+	<script>  
+	    var myCanvas = document.getElementById("myCanvas");  
+	    var context = myCanvas.getContext("2d");  
+	      
+	    context.fillStyle = "#e4e4e4";  
+	    context.fillRect(0,0,500,500);  
+	  
+	    context.beginPath();  
+	      
+	    context.moveTo(100,100);  
+	    context.lineTo(200,100);  
+	    context.strokeStyle = "red";  //第二个颜色不是覆盖，而是在第一个颜色的基础上进行绘制的，会进行颜色的结合
+	    context.stroke();  
+	  
+	    context.beginPath();  
+	    context.moveTo(100,200);  
+	    context.lineTo(200,200);  
+	    context.strokeStyle = "blue";  
+	    context.stroke();  
+	</script>  
+</body>
+</html>

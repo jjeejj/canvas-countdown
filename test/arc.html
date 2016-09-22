@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arc</title>
+</head>
+<body>
+	<canvas id="canvas" width="1024" height="768">
+		您的浏览器不支持canvas,请更换浏览器
+	</canvas>
+	<script>
+		window.onload = function () {
+			
+			var canvas = document.getElementById('canvas');
+
+			var context =  canvas.getContext('2d');
+
+			context.lineWidth = 5;
+			context.strokeStyle = '#005588';
+
+			context.arc(300,300,200,0,1.5*Math.PI,true);
+
+			context.stroke();
+		}
+	</script>
+</body>
+</html>

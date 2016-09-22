@@ -1,0 +1,8 @@
+1:页面离开后倒计时的小球会囤积----------怎么解决 ----小球维护处理后没有了该问题
+
+2：document.body.clientHeight
+   document.documentElement.clientHeight
+   window.screen.availHeight
+   区别？？？
+
+
